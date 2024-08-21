@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mini-project1/css/capital.css">
+    <link rel="stylesheet" href="../../css/moviebr.css">
+    <title>movies category</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        :root{
+        --bg-color1:#2E073F;
+        --color2:#7A1CAC;
+        --color3:#AD49E1;
+        --color4:#EDB3F8;
+        }
+            img:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        #hmm a .hommain{
+background-color: rgba(128, 255, 0, 0.842);    
+}
+#hmm a .hommain:hover{
+    background-color: chartreuse;
+    transform: scale(1.3);
+    transition:1.5;
+}
+#hmm a .musmain{
+    background-color: rgba(128, 255, 0, 0.842);
+}
+#hmm a .musmain:hover{
+    background-color: chartreuse;
+    transform: scale(1.3);
+    transition:1.5;
+}
+#hmm a .movmain{
+    background-color:rgba(128, 255, 0, 0.842);
+}
+#hmm a .movmain:hover{
+    background-color: chartreuse;
+    transform: scale(1.3);
+    transition:1.5;
+}
+#hmm a .movmain{
+    background-color: chartreuse;
+    transform: scale(1.3);
+    transition:1.5;
+}
+        #act{
+            padding: 10px;
+            background-color: #f7efe5;
+            height: 35px;
+            border-radius: 20px;
+            /* width: 125px;  */
+        }
+        #comm{
+            padding: 10px;
+            background-color: #f7efe5;
+            height: 35px;
+            border-radius: 20px;
+        }
+        #com{
+            padding: 10px;
+            background-color:  #f7efe5;
+            height: 35px;
+            border-radius: 20px;
+        }
+        #category{ 
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        #category>div :hover{
+            text-decoration: underline;
+            color:var(--color1);
+            font-size: 35px;
+        }
+        #category>div{
+            margin-left: 18px;                   
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        #category>div>h1{
+            color: var(--bg-color1);
+        }
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding: 10px;
+    }
+    </style>
+</head>
+<body>
+ 
+    <h1 class="maintitle" style="text-align: center;" >SPOTSTAR - MOVIE</h1>
+    <div id="hmm">
+        <a href="../home.html"><button class="hommain"  >Home</button></a>
+        <a href="../music/musicdirectors.html"><button class="musmain"  >Music</button></a>
+        <a href="../movies/moviedirectors.html"><button class="movmain"   >Movie</button></a>
+    </div>
+    <div id="line"></div>
+    <h2 class="hea2">Acter / actress</h2>
+
+    <div class="actname">
+        <a href="../movies/acteractress/ajithmov.html"><img style="text-align: center;" src="../../mini-media/images/music/ajith.jpeg" alt="" ><h3>ajith kumar</h3></a>
+    <a href="../movies/acteractress/vijaymovie.html"><img src="../../mini-media/images/music/vijay 2.jpeg" alt=""><h3>vijay</h3></a>
+    <a href="../movies/acteractress/skmovie.html"><img src="../../mini-media/images/music/sk.jpeg" alt=""><h3>sivakarthikeyan</h3></a>
+    <a href="../movies/acteractress/rajinimov.html"><img src="../../mini-media/images/movie directors/rajinikanth.jpg" alt=""><h3>rajinikanth</h3></a>
+    <a href="../movies/acteractress/dhanushmov.html"><img src="../../mini-media/images/music/dhanush.jpeg" alt=""><h3>dhanush</h3></a>
+    </div>
+    <h2 class="hea2">movie directors</h2>
+    <div class="actname">
+    <a href="./moviedirectors/moviedir.html/sankar.html"><img src="../../mini-media/images/movie directors/directorshankar_fan-20240425-0001.jpg" alt=""  ><h3>shankar</h3></a>
+    <a href="./moviedirectors/moviedir.html/nelson.html"><img src="../../mini-media/images/movie directors/nelsondilipkumar-20240425-0001.jpg" alt=""><h3>nelson</h3></a>
+    <a href="./moviedirectors/moviedir.html/vetrimaaran.html"><img src="../../mini-media/images/movie directors/vetrimaaran.jpeg" alt="" ><h3>vetrimaaran</h3></a>
+    <a href="./moviedirectors/moviedir.html/logesh.html"><img src="../../mini-media/images/movie directors/lokesh kanagaraj.jpeg" alt="" ><h3>logkesh</h3></a>
+    <a href="./moviedirectors/moviedir.html/manirathinam.html"><img src="../../mini-media/images/movie directors/manirathinam.jpeg" alt="" ><h3>manirathinam</h3></a>
+    </div>
+
+    
+    <div id="category">
+        <div id="act"><a class="head1" href="./categories/taction.html"><h1>Action</h1></a></div>
+        <div id="comm"><a class="head2" href="./categories/tcommercial.html"><h1>Commercial</h1></a></div>
+        <div id="com"><a class="head3" href="./categories/tcomedy.html"><h1>comedy</h1></a></div>
+   
+        
+    </div>
+
+<div id="container">
+    <!-- <div style="margin-top: 75px;"></div> -->
+   <div> <iframe src="https://youtube.com/embed/xenOE1Tma0A?feature=shared" frameborder="0"></iframe>
+    <h3>jailor</h3></div>
+
+   <div> <iframe src="https://youtube.com/embed/OKBMCL-frPU?feature=shared" frameborder="0"></iframe>
+    <h3>vikram</h3></div>
+   
+    <div><iframe src="https://youtube.com/embed/d1Wrscf93YE?feature=shared" frameborder="0"></iframe>
+    <h3>Rajinimurugan</h3></div>
+   
+    <div> <iframe src="https://youtube.com/embed/GR-Ui8-V2M0?feature=shared" frameborder="0"></iframe>
+    <h3>Bigil</h3> </div>
+   
+    <div> <iframe src="https://youtube.com/embed/0E1kVRRi6lk?feature=shared" frameborder="0"></iframe>
+ <h3>Beast</h3> </div>
+    
+    <div><iframe src="https://youtube.com/embed/kNpwAxnjbNA?feature=shared" frameborder="0"></iframe>
+    <h2>ayalaan</h2></div>
+    
+    <div><iframe src="https://youtube.com/embed/FaQe8JFGdaM?feature=shared" frameborder="0"></iframe>
+    <h2>love today</h2></div>    
+
+    <div><iframe src="https://youtube.com/embed/jnBZboK17_A?feature=shared" frameborder="0"></iframe>
+        <h2>Thunivu</h2></div>    
+    
+
+
+</div>
+
+   
+
+</body>
+</html>

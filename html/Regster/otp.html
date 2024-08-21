@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>OTP</title>
+    <style>
+        *{
+            background-color: #ffebb2;
+        }
+         #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            scrollbar-width:none;
+            flex-direction: column;
+         }
+         #container div{
+            display: flex;
+            justify-content: center;
+            margin: 8px;
+         }
+         h1{
+            color: #d875c7;
+         }
+         input{
+            border-radius: 15px;
+            height: 18px;
+         }
+         button{
+            height: 20px;
+            border-radius: 20px;
+         }
+         #error{
+        text-align: center;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        }
+
+    </style>
+    <script>
+        var generated_otp=Math.floor(Math.random()*999999)
+        alert(generated_otp)
+        function OTPVerification(){
+            var User_otp=document.getElementById("otp").value
+            if(generated_otp==User_otp){
+                window.location.href="./success.html"
+            }else{
+                document.getElementById("error").innerHTML="Incorrect OTP"
+            }
+        }
+        function ResendOTP(){
+               window.location.href="./otp.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+    
+    <div>
+        <h1 id="h1">SPOTSTAR OTP VERIFICATION</h1>
+    </div>
+    <div>
+        <LAbel>OTP <INPut id="otp" type="text"></INPut></LAbel>
+    </div>
+    <div>
+    <button onclick="OTPVerification()">Verify</button>
+    </div>
+    <p style="text-align: center;" id="error"></p>
+    <div>
+    <button onclick="ResendOTP()">Resend OTP</button>
+    </div>
+</div>
+    
+</body>
+</html>

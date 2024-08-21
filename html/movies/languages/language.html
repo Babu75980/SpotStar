@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../css/moviebr.css">
+    <script>
+        function social()
+        {
+            // alert(document.getElementById("select").value)
+            var choice= document.getElementById("select").value
+            if(choice == 101){
+                window.location.href="../moviedirectors.html"
+            }else if(choice == 102){
+                window.location.href="../languages/telugu/telugumain.html"
+            }else if(choice == 103){
+                window.location.href="../languages/malayalam/mainmalayalam.html"    
+            }else{
+                window.location.href="../languages/kannadam/mainkannadam.html"    
+            } 
+        }
+    </script>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        #select{
+            height: 25px;
+            width: 150px;
+            text-align: center;
+            margin-top: 5px;
+            margin-left: 510px;
+            background-color: greenyellow;
+        }
+        #nextbutton{
+            height: 27px;
+            width: 55px;
+            margin-left: 23px;
+            border-radius:15px ;
+            background-color: greenyellow;
+            border: none;
+        }
+        div{
+            text-align: center;
+            margin-top: 180px;
+            
+        }
+        div>h1{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Movies</h1>
+        <h1>select the language</h1>
+    </div>
+
+    <a href="../languages/kannadam/mainkannadam.html"></a>
+    <select name="" id="select">
+        <option value="101">Tamil</option>
+        <option value="102">Telugu</option>
+        <option value="103">Malayalam</option>
+        <option value="104">Kannadam</option>
+        
+            </select>
+            <button id="nextbutton" onclick="social()">next</button>
+
+
+
+   
+</body>
+</html>

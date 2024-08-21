@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password 1</title>
+    <link rel="stylesheet" href="../../../css/forget.css">
+    <script>
+        function Emailvalidation(){
+        // Email Validation
+        var Email=document.getElementById("email").value 
+            var email_flag=false
+            var flag1=true
+            var flag2=false
+            for(var i=0;i<Email.length;i++){
+                if((Email[i]>='A')&&(Email[i]<='Z')){
+                    flag1=false
+                }
+                if(Email[i]=='@'){
+                    flag2=true
+                }
+            }
+            if((flag1==true)&&(flag2==true)){
+                window.location.href="../forgetpass/otpforforget.html"
+            }else{
+                document.getElementById("foremailerror").innerHTML="Invalid Email"
+            }
+        }
+    </script>
+    <style>
+        
+       
+    </style>
+</head>
+<body>
+     <div id="container">
+       <div> <h1 id="h1">SPOTSTAR</h1></div>
+      <div>  <label><input id="email" type="email"  placeholder=" E-mail" style="border-radius: 5px;" ></label></div>
+       <div> <button onclick="Emailvalidation()" style="border-radius: 10px;">Send OTP</button></div>
+     <div>   <p id="foremailerror"></p></div>
+    </div>
+        
+      
+</body>
+</html>

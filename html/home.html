@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/capital.css">
+    <!-- <link rel="stylesheet" href="../css/moviebr.css"> -->
+    <title>home</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(../mini-media/images/background/blue\ bc.jpg);
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-attachment: fixed;
+        }
+        
+        #hmm{
+    display: flex;
+    margin-left: 850px;
+    margin-right: 35px;
+}
+#line{
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 3px;
+    background-color: greenyellow;
+    left: 865px;
+    bottom: 3px;
+
+}
+/* #hmm a{
+    left: 200px;
+    display: flex;
+} */
+#hmm a button {
+    /* display: flex; */
+
+    height: 35px;
+    width: 70px;
+    margin: 10px;
+    /* left: 200px; */
+    border-radius:9px ;
+    border: none;
+    padding: 10px;
+    background-color: chartreuse;
+    font-size: 13px;
+    font-weight: 700;
+}
+#hmm a .hommain{
+    background-color: rgba(128, 255, 0, 0.842);
+    
+}
+/* #hmm a .hommain:hover{
+    background-color: chartreuse;
+    transform: scale(1.3);
+    transition:1.5;
+} */
+#hmm a .hommain{
+    background-color: chartreuse;
+    transform: scale(1.1);
+    transition:1.5;
+}
+
+#hmm a .lout{
+    height: 35px;
+    width: 70px;
+    margin: 10px;
+    border-radius:9px ;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(252, 144, 144);
+}
+#hmm a .lout:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+        
+        #log{
+            text-align: right;
+        }
+        #fullmm{
+            display: flex;
+            justify-content: center;
+            margin-top: 130px;
+            
+        }
+        img{
+            border-radius: 25px;
+        }
+        #mus{
+            margin-right:50px ;
+        }
+        #mov{
+            margin-left:50px ;
+        }
+    </style>
+</head>
+<body>
+   
+
+   <div id="hmm">
+    <a  href="./home.html"><button class="hommain">Home</button></a>
+        <a href="../index.html"><button class="lout" >Log Out</button></a>
+    </div>
+    <div id="line"></div>
+    <div id="fullmm">
+       <div id="mus">
+        <a href="./music/musicdirectors.html"><img src="../mini-media/images/background/smallmus.jpg" alt="first img" height="300px"  width="300px"><br><br></a>
+       </div> 
+       <div id="mov">
+        <a href="./movies/languages/language.html"><img src="../mini-media/images/background/mov2.jpg" alt="" height="300px" width="300px"></a>
+       </div>
+        
+    </div>
+    
+   
+    
+    
+</body>
+</html> 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP for forget</title>
+    <link rel="stylesheet" href="../../../css/forget.css">
+    <script>
+        var generated_otp=Math.floor(Math.random()*999999)
+        alert(generated_otp)
+        function OTPVerification(){
+            var User_otp=document.getElementById("otp").value
+            if(generated_otp==User_otp){
+                window.location.href="../forgetpass/updatepassword.html"
+            }else{
+                document.getElementById("error").innerHTML="Incorrect OTP"
+            }
+        }
+        function ResendOTP(){
+               window.location.href="../forgetpass/otpforforget.html"
+        }
+    </script>
+    <style>
+        *{
+            /* background-color: lightblue; */
+            scrollbar-width: none;
+            /* margin: 0%;
+            padding: 0%; */
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+    <div id="container">
+    <div>
+        <h1  id="h1">SPOTSTAR OTP VERIFICATION</h1>
+    </div>
+    <div>
+        <LAbel>OTP <INPut id="otp" type="text"></INPut></LAbel>
+    </div>
+
+    <div>
+        <td style="text-align: center;"><button onclick="OTPVerification()" style="border-radius: 15%;">Verify</button></td>
+    </div>
+    <div>    <td><p id="error"></p></td>
+    
+    </div>
+    <tr></tr>
+    <div>
+        <td style="text-align: center;"><button onclick="ResendOTP()" style="border-radius: 8%;">Resend OTP</button></td>
+    </div>
+
+</div>
+
+    
+</body>
+</html>

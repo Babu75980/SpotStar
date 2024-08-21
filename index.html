@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+      function LoginValidation(){
+          var db={'BABU':'@2201','RCB':'KOHLI@18','JEEVA':'MASS@07'}
+          var username=document.getElementById("user").value 
+          var password=document.getElementById("pass").value 
+          var team=Object.keys(db)
+          var flag=false
+          for(var i=0;i<team.length;i++){
+              if(username==team[i]){
+                  if(password==db[username]){
+                      flag=true
+                  }
+              }
+          }
+          if(flag==true){
+              window.location.href="./html/home.html"
+          }else{
+              document.getElementById("error").innerHTML="Invalid Credentials"
+          }
+      }
+  </script>
+    
+</head>
+<body>
+ <div id="index"> 
+    <div><h1 id="h1">SPOTSTAR</h1></div>
+    <div><label><input type="text" placeholder="Username" id="user" ></label></div>
+    <div> <label><INPut type="password" placeholder="Password" id="pass" ></INPut></label></div>
+    <div id="logindiv"> <button onclick="LoginValidation()" >LOGIN</button></div>
+    <p id="error"></p>
+    
+    <div id="forgotdiv" ><a id="forgot" href="./html/Regster/forgetpass/forget.html"><button>Forget Password</button></a></div>
+    <div id="signup"> 
+    <p id="dhac">Don't have an account?</p> 
+    <a id="sup" href="../mini-project1/html/Regster/signup.html">Sign Up</a>
+  </div>
+
+
+</div>
+</body>
+</html>

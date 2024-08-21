@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+
+    <script>
+        function SignupValidation(){
+            // Phone Number Validation
+            var Phone=document.getElementById("phone").value 
+            var phone_flag=false
+            if((Phone>=6000000000)&&(Phone<=9999999999)){
+                phone_flag=true
+            }else{
+                document.getElementById("phoneerror").innerHTML="Invalid Phone Number";
+
+            }
+
+             // Email Validation
+             var Email=document.getElementById("mail").value 
+            var email_flag=false
+            var flag1=true
+            var flag2=false
+            for(var i=0;i<Email.length;i++){
+                if((Email[i]>='A')&&(Email[i]<='Z')){
+                    flag1=false
+                }
+                if(Email[i]=='@'){
+                    flag2=true
+                }
+            }
+            if((flag1==true)&&(flag2==true)){
+                email_flag=true
+            }else{
+                document.getElementById("emailerror").innerHTML="Invalid Email"
+            }
+
+            // Password Validation
+            var Password=document.getElementById("pass").value
+            var password_flag=false
+            var upper=0
+            var lower=0
+            var num=0
+            var special=0
+            for(var i=0;i<Password.length;i++){
+                if((Password[i]>='A')&&(Password[i]<='Z')){
+                    upper++
+                }else if((Password[i]>='a')&&(Password[i])<='z'){
+                    lower++
+                }else if((Password[i]>='0')&&(Password[i]<='9')){
+                    num++
+                }else{
+                    special++
+                }
+            }
+            if((Password.length>=8)&&(Password.length<=16)&&(upper>=1)&&(lower>=1)&&(num>=1)&&(special>=1)){
+                password_flag=true
+            }else{
+                document.getElementById("passerror").innerHTML="Not a Strong Password"
+            }
+
+            // Confirm Password
+            var Confirm=document.getElementById("confirm").value
+            var confirm_flag=false
+            if(Password==Confirm){
+                confirm_flag=true
+            }else{
+                document.getElementById("confirmerror").innerHTML="Password does not match"
+            }
+
+            // Final Validation
+            if((phone_flag==true)&&(email_flag==true)&&(password_flag==true)&&(confirm_flag==true)){
+                window.location.href="./otp.html"
+            }
+
+
+
+        }
+        </script>
+
+<style>
+    *{
+    background-color: #ffebb2;
+    margin: 0%;
+    padding: 0%;
+    }
+    h1{
+    color: #d875c7;
+   }
+    #orgsignup{
+        /* display: flex; */
+        margin-top: 100px;
+        display: grid;
+        grid-row-start: auto;
+    }
+    #orgsignup>div{
+        display: flex;
+        justify-content: center;
+        /* gap: 20px; */
+        margin: 2px;
+        /* align-items: end; */  
+    }
+    input{
+        size: 5cap;
+        height: 18px;
+        background-color: #fbf6e2;
+        /* color:rgb(254, ; */
+        border-radius: 6px;
+        text-align: center;
+    }
+    label{
+        font-size: 18px;
+        color:#131842;
+        /* text-align: center; */
+
+    }
+    button{
+        background-color: lemonchiffon;
+        margin-left: 375px;
+        margin-top: 25px;
+        height: 27px;
+        width: 60px;
+
+    }
+    #emailerror,#phoneerror,#confirmerror{
+        text-align: center;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+</head>
+<body>      
+      
+    <div id="orgsignup">
+    <div>    <h1 style="text-align: center;" id="h1">SPOTSTAR</h1>  </div>
+    <div><label >FirstName</label></div>
+    <div><INPut type="text"  placeholder="firstname" ></INPut> </div>
+    <div><LABEl for="">Last Name</LABEl>    </div>    
+    <div><input type="text" placeholder="lastname" required>   </div>
+        
+    <div><label for="">Email Id</label>    </div>    
+    <div><input id="mail" type="email" style="border-radius: 6px;" placeholder="email-id"></div>
+        <p id="emailerror"></p>
+    <div><label for="">Phone number</label>    </div>    
+    <div><input id="phone" type="number" style="border-radius: 6px;" placeholder="phone no"></div>
+        <p id="phoneerror"></p>
+    <div> <label for="" >Password</label>    </div>    
+    <div> <input id="pass" type="password" placeholder="password">
+        </div>
+    <div>
+        <label for="">Confirm Password</label>    </div>
+    <div>  <input id="confirm" type="password" placeholder="confirm password"></div>
+        <p id="confirmerror"></p>
+    </div>
+           
+    
+          <div>  <button onclick="SignupValidation()" style="border-radius: 15%;" >Next</button>  
+         <a href="../../index.html"><button style="border-radius: 15%;" >Cancel</button></a>   
+    
+    </div>
+            
+            
+
+
+</body>
+</html>
