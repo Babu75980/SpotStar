@@ -21,31 +21,32 @@ h2{
     text-transform:capitalize;
     color:var(--color4);
     margin-left: 15px;
-
-    /* display: flex; */
-    /* -ms-flex-align: start; */
     margin-top: 0%;
     margin-bottom: 0%;
-    /* padding: 2px 0%; */
-    /* margin: 10px; */
 }
 #hmm{
     display: flex;
-    position: relative;
     justify-content: flex-end;
-    margin-right: 35px;
+    flex-direction: row;
 }
-#line{
+#linewhole{
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;            
+}
+#line1,#line2,#line3{
     display: flex;
-    position: relative;
-    width: 80px;
+    width: 99px;
     height: 3px;
     background-color: greenyellow;
-    left: 1124px;
     bottom: 2px;
-
 }
-
+#line1{
+    background-color: transparent;
+}
+#line3{
+    background-color: transparent;
+}
 
 #hmm a button {
     height: 35px;
