@@ -23,18 +23,25 @@ h1{
 #hmm{
     display: flex;
     justify-content: flex-end;
-    margin-right: 35px;
-    
+    flex-direction: row;
 }
-#line{
+#linewhole{
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;            
+}
+#line1,#line2,#line3{
     display: flex;
-    position: relative;
-    width: 80px;
+    width: 95px;
     height: 3px;
     background-color: greenyellow;
-    left: 1227px;
     bottom: 2px;
-
+}
+#line1{
+    background-color: transparent;
+}
+#line2{
+    background-color: transparent;
 }
 #hmm a button {
     height: 35px;
