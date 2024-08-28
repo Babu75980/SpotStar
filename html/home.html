@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/capital.css">
-    <!-- <link rel="stylesheet" href="../css/moviebr.css"> -->
     <title>home</title>
     <style>
         *{
@@ -20,26 +18,26 @@
         
         #hmm{
     display: flex;
-    margin-left: 850px;
-    margin-right: 35px;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
-#line{
+#linewhole{
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+            
+}
+#line1,#line2{
     display: flex;
-    position: relative;
     width: 60px;
     height: 3px;
     background-color: greenyellow;
-    left: 865px;
-    bottom: 3px;
-
+    bottom: 2px;
 }
-/* #hmm a{
-    left: 200px;
-    display: flex;
-} */
+#line2{
+    background-color: transparent;
+}
 #hmm a button {
-    /* display: flex; */
-
     height: 35px;
     width: 70px;
     margin: 10px;
@@ -55,17 +53,11 @@
     background-color: rgba(128, 255, 0, 0.842);
     
 }
-/* #hmm a .hommain:hover{
-    background-color: chartreuse;
-    transform: scale(1.3);
-    transition:1.5;
-} */
 #hmm a .hommain{
     background-color: chartreuse;
     transform: scale(1.1);
     transition:1.5;
 }
-
 #hmm a .lout{
     height: 35px;
     width: 70px;
@@ -80,19 +72,24 @@
 #hmm a .lout:hover{
     background-color: rgb(255, 0, 0);
 }
-
-
-        
-        #log{
+       #log{
             text-align: right;
         }
         #fullmm{
-            display: flex;
-            justify-content: center;
+             display: flex; 
+            justify-content: space-evenly;
             margin-top: 130px;
+            flex-direction: row;
+            text-align: center;
             
         }
+        #fullmm div{
+            display: flex;
+        justify-content: center;
+        }
         img{
+            height: 240px;
+            width: 240px;
             border-radius: 25px;
         }
         #mus{
@@ -106,11 +103,8 @@
 <body>
    
 
-   <div id="hmm">
-    <a  href="./home.html"><button class="hommain">Home</button></a>
-        <a href="../index.html"><button class="lout" >Log Out</button></a>
-    </div>
-    <div id="line"></div>
+   
+    
     <div id="fullmm">
        <div id="mus">
         <a href="./music/musicdirectors.html"><img src="../mini-media/images/background/smallmus.jpg" alt="first img" height="300px"  width="300px"><br><br></a>
@@ -118,9 +112,15 @@
        <div id="mov">
         <a href="./movies/languages/language.html"><img src="../mini-media/images/background/mov2.jpg" alt="" height="300px" width="300px"></a>
        </div>
-        
     </div>
-    
+    <div id="hmm">
+        <div><a  href="./home.html"><button class="hommain">Home</button></a></div>
+           <div> <a href="../index.html"><button class="lout" >Log Out</button></a></div>
+        </div>
+        <div id="linewhole">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        </div>
    
     
     
